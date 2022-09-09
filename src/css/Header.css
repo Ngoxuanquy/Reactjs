@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Times New Roman", Times, serif;
+}
+.quy{
+    background-color: black;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: 15% 10% 10% 10% 10% 27% 4% 7% 3%;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 22px;
+    color: white;
+    position: fixed;
+    z-index: 111111;
+
+  
+}
+
+.menu  li{
+    margin-top: 20px;
+    height: 50px;
+}
+
+#search{
+    font-size: 15px;
+    margin-top: -15px;
+    margin-left: 5px;
+
+}
+#input_tim{
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+#submit{
+    width: 10%;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+#cart{
+    color: coral;
+}
+
+.length{
+    font-size: 15px;
+    position: relative;
+    top: 4px;
+}
+.trangchu{
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+}
+.li_trangchi {
+    list-style: none;
+    text-decoration: none;
+    height: 40px;
+}
+
+#img_bia{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-top: -12px;
+}
+
+.trangchu:hover {
+    color: coral;
+    animation: all 1s linear ;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.8s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.8s linear 0s;
+}
+
+.li_phanloai{
+    color: white;
+}
+.mh{
+    color: white;
+}
+.menu_phanloai{
+    width: 200%;
+    /* height: 40px; */
+    color: white;
+    background-color: rgb(94, 90, 90);
+    display: none;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 22px;
+    
+}
+.menu_phanloai li {
+    height: 50px;
+    margin-top: 0px;
+    position: relative;
+    top:0px;
+    border-bottom: 1px solid white ;
+    
+}
+.menu_phanloai li div{
+    position: relative;
+    top:10px;
+}
+.menu_phanloai li:hover {
+    background-color: aliceblue;
+    display: block;
+    color: black;
+}
+.phanloai{
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+}
+
+.phanloai:hover {
+    color: coral;
+    animation: all 1s linear ;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.8s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.8s linear 0s;
+}
+
+.phanloai:hover .menu_phanloai {
+    display: block;
+}
+.phu_den{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1111111;
+    position: fixed;
+    display: none;
+}
+.phu_trang{
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    z-index: 1222222;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgb(217, 244, 242);
+    line-height: 70px;
+    /* margin-top: 100px; */
+    display: none;
+
+}
+.phu_trang ul  {
+    margin-top: 80px;
+    /* color: black; */
+
+}
+.phu_trang ul li {
+    border-bottom:1px solid black ;
+
+}
+.phu_trang ul li:hover {
+    background-color: aqua;
+}
+
+#close{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+}
+#menu_fake{
+    display: none;
+}
+
+
+.box_search {
+    width: 70%;
+    height: 200px;
+    background-color: rgb(242, 246, 246);
+    text-align: center;
+    justify-self: center;
+    margin-left: 70px;
+    margin-top: -10px;
+    color: black;
+    line-height: 30px;
+   display: none;
+}
+.test{
+    text-align: center;
+    justify-content: center;
+}
+.fake_cart{
+    display: none;
+    width: 700%;
+    /* height: 200px; */
+    background-color: rgb(238, 238, 238);
+    margin-left: -200px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#cart:hover .fake_cart{
+    display: block;
+}
+
+.fake_cart .name_cart{
+   font-size: 20px;
+   margin: 30px 50px 0px 20px;
+
+}
+.fake_cart ul {
+    margin-top: 20px;
+   
+}
+.fake_cart ul li {
+    /* height: 30px; */
+    /* margin-left: -100px; */
+    border-bottom: 1px solid black;
+    margin-top: 0px;
+    height: auto;
+  
+}
+.fake_cart ul li:hover {
+    background-color: rgb(254, 254, 254);
+   
+}
+
+#img_cart{
+    width: 70px;
+    height: 70px;    
+    margin: 2px 30px 0 0px ;
+}
+
+.Gia_cart{
+    margin: 30px 30px 0 30px ;
+
+}
+#xoa {
+   font-size: 30px;
+   margin: 30px 30px 0 30px ;
+
+}
+#xoa:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+.card{
+    display: flex;
+}
+
+@media only screen
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+
+}
+
+@media only screen and (max-width: 768px){
+    #menu_fake{
+        display: block;
+    }
+    .trangchu{
+        display: none;
+    }
+    .phanloai{
+        display: none;
+
+    }
+    .lienhe{
+        display: none;
+
+    }
+    .vevhungtoi{
+        display: none;
+
+    }
+    .dangky{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15% 0% 0% 0% 0% 60% 10% 0% 15%;
+    }
+    #cart{
+        margin-top: 12px;
+    }
+    #input_tim{
+        margin-top: -5px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  {
+    #menu_fake{
+        display: block;
+    }
+    .trangchu{
+        display: none;
+    }
+    .phanloai{
+        display: none;
+
+    }
+    .lienhe{
+        display: none;
+
+    }
+    .vevhungtoi{
+        display: none;
+
+    }
+    .dangky{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15% 0% 0% 0% 0% 60% 10% 0% 15%;
+    }
+    #cart{
+        margin-top: 12px;
+
+    }
+    #input_tim{
+        margin-top: -5px;
+    }
+}

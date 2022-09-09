@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stantio-Shop</title>
+    <link rel="icon" href="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/275549265_119316327349050_7133039339301134607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QIoY2IVqOigAX-Siryl&_nc_ht=scontent.fhan14-1.fna&oh=00_AT8wGjGipQRX4Ye5FMJKypmmdxOkw3XtGmuIebcb7csUjA&oe=6309CA94"> 
+</head>
+<body>
+    <div id="root"></div>
+    <script src="../build/bundle.js"></script>
+   
+</body>
+    <script>
+				var danhgiaApi = "http://localhost:3000/danhgia";
+
+        function getApi(callback){
+		fetch(danhgiaApi)
+		.then(function(res) {
+			return res.json()
+		})
+		.then(callback);
+	}
+	
+    function readerDanggia(danhgia) {
+		var ul_danhgia = document.querySelector('#ul_danhgia')
+		 var html = danhgia.map(function(danh) {
+			return `
+				<li> 
+				<h3> ${danh.id} ${danh.title}  </h3>
+				<button onclick=handerDelete(${danh.id}) > Xóa </button>
+				</li>
+			`
+		 })
+
+		 ul_danhgia.innerHTML = html.join('');
+
+		}
+
+			function handerDelete(id) {
+				// var danhgiaApi = "http://localhost:3000/danhgia";
+				var options = {
+				  method: 'DELETE', 
+				  headers: {
+					'Content-Type': 'application/json'
+					}
+				};
+			
+				fetch(danhgiaApi + '/' +id , options)
+				.then(function(res) {
+				  return res.json();
+				})
+				.then(function(){
+				  getApi(function(danhgia){
+					readerDanggia(danhgia);
+				  });
+				})
+			  }
+
+			  function reloadForm(name='') {
+    				document.querySelector('input[name="input"]').value = name;
+			  }
+
+			function update(id) {
+				getApi(function(courses){
+				const course = courses.filter(x => x.id == id)[0];
+				reloadForm(course.title);
+			});
+			//get editBtn of form
+			var editBtn = document.getElementById('update');
+			window.onload = function(){
+				editBtn.onclick =  function(){
+				console.log(formData)
+
+				console.log("ABtn")
+				var title = document.querySelector('input[name="input"]').value;
+				var formData = {
+					title: title,
+					curDate: curDate.getSeconds()
+				}
+				UpdateForm(formData, id, function(){
+					getApi(function(danhgia){
+					readerDanggia(danhgia);
+				  });
+					reloadForm();
+				})
+			}}
+			}
+
+			function UpdateForm(data, id, callback){
+				console.log(id)
+				console.log(data)
+				var options = {
+						method: 'PUT',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify(data)
+					};
+					fetch(danhgiaApi + '/' + id, options)
+						.then(response => response.json())
+						.then(callback);
+				}
+		
+    </script>
+</html>

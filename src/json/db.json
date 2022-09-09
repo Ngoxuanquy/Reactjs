@@ -1,0 +1,123 @@
+{
+  "danhgia": [
+    {
+      "title": "a",
+      "curDate": 35,
+      "id": 1
+    },
+    {
+      "title": "a1",
+      "curDate": 42,
+      "id": 2
+    },
+    {
+      "title": "10 điểm",
+      "curDate": 46,
+      "id": 3
+    }
+  ],
+  "login": [
+    {
+      "name": "",
+      "gmail": "ngoxuanquy1812@gmail.com",
+      "matkhau": "123456",
+      "id": 1
+    },
+    {
+      "name": "",
+      "gmail": "ngoxuanquy1812@gmail.com",
+      "matkhau": "123456",
+      "id": 2
+    },
+    {
+      "name": "Ngô Xuân Quy",
+      "gmail": "ngoxuanquy181@gmail.com",
+      "matkhau": "123123",
+      "id": 3
+    },
+    {
+      "name": "Ngô Xuân Quy",
+      "gmail": "ngoxuanquy1812@gmail.com",
+      "matkhau": "123456",
+      "id": 4
+    },
+    {
+      "name": "Ngô Xuân Quy",
+      "gmail": "ngoxuanquy1812@gmail.com",
+      "matkhau": "123456",
+      "id": 5
+    },
+    {
+      "name": "",
+      "gmail": "1",
+      "matkhau": "1111111",
+      "id": 6
+    },
+    {
+      "name": "Ngô Xuân Quy",
+      "gmail": "2",
+      "matkhau": "111111",
+      "id": 7
+    },
+    {
+      "name": "linh",
+      "gmail": "3",
+      "matkhau": "111111",
+      "id": 8
+    },
+    {
+      "name": "Ngô Xuân Quy",
+      "gmail": "1",
+      "matkhau": "123456",
+      "id": 9
+    },
+    {
+      "name": "1",
+      "gmail": "1",
+      "matkhau": "111111",
+      "id": 10
+    },
+    {
+      "name": "",
+      "gmail": "1",
+      "matkhau": "111111",
+      "id": 11
+    },
+    {
+      "name": "",
+      "gmail": "1",
+      "matkhau": "111111",
+      "id": 12
+    },
+    {
+      "name": "",
+      "gmail": "1",
+      "matkhau": "111111",
+      "id": 13
+    },
+    {
+      "name": "",
+      "gmail": "1",
+      "matkhau": "111111",
+      "id": 14
+    },
+    {
+      "name": "",
+      "gmail": "1",
+      "matkhau": "111111",
+      "id": 15
+    },
+    {
+      "name": "",
+      "gmail": "1",
+      "matkhau": "111111",
+      "id": 16
+    },
+    {
+      "name": "",
+      "gmail": "1",
+      "matkhau": "111111",
+      "id": 17
+    }
+  ]
+}

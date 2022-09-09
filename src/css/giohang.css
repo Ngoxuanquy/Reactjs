@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div table{
+    position:relative;
+    top: 100px;
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+}
+
+div table tr td{
+    border: 1px solid black;
+}
+
+.img_giohang{
+    width: 100px;
+    height: 100px;
+}
+
+.div_hanhdong{
+    font-size: 20px;
+    
+}
+
+.form-control{
+    width: 15%;
+    height: 30px;
+    font-size: 20px;
+}
+.button{
+    width: 10%;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: -10px;
+}
+
+.form-check{
+    margin-top: 50px;
+    font-size: 24px;
+    margin-bottom: -50px;
+}
+#checkbox_all{
+    width: 5%;
+    height: 20px;
+}
